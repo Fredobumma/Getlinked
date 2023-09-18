@@ -1,1 +1,2 @@
-export * from "./footer";
+export * from "./heading";
+export * from "./figure";
