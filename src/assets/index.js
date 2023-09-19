@@ -8,6 +8,8 @@ import criteria_2x from "./criteria-2x.png";
 import criteria_1x from "./criteria-1x.png";
 import guideline_2x from "./guideline-2x.png";
 import guideline_1x from "./guideline-1x.png";
+import faq_2x from "./faq-2x.png";
+import faq_1x from "./faq-1x.png";
 
 export {
 	chain,
@@ -20,4 +22,6 @@ export {
 	criteria_1x,
 	guideline_2x,
 	guideline_1x,
+	faq_2x,
+	faq_1x,
 };
