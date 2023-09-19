@@ -4,5 +4,16 @@ import spark from "./spark.png";
 import arrow from "./arrow.png";
 import big_idea_2x from "./big-idea-2x.png";
 import big_idea_1x from "./big-idea-1x.png";
+import criteria_2x from "./criteria-2x.png";
+import criteria_1x from "./criteria-1x.png";
 
-export { chain, creative, spark, arrow, big_idea_2x, big_idea_1x };
+export {
+	chain,
+	creative,
+	spark,
+	arrow,
+	big_idea_2x,
+	big_idea_1x,
+	criteria_2x,
+	criteria_1x,
+};
