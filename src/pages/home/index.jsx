@@ -7,12 +7,13 @@ import {
 	Introduction,
 	Policy,
 	Rewards,
+	Sponsors,
 } from "src/sections";
 
 export const Home = () => {
 	return (
 		<>
-			<Policy />
+			<Sponsors />
 		</>
 	);
 };

@@ -26,6 +26,7 @@ export default {
 			spacing: {
 				card: "min(1%, 10px)",
 				min10px: "min(3%, 10px)",
+				partners: "min(20px, 30%)",
 			},
 		},
 	},

@@ -18,6 +18,18 @@ import bronze_medal_2x from "./bronze-medal-2x.png";
 import policy_2x from "./policy-2x.png";
 import policy_1x from "./policy-1x.png";
 import terms_list from "./terms-list.svg";
+import liberty_assured_2x from "./liberty-assured-2x.png";
+import liberty_assured_1x from "./liberty-assured-1x.png";
+import liberty_pay_2x from "./liberty-pay-2x.png";
+import liberty_pay_1x from "./liberty-pay-1x.png";
+import paybox_2x from "./paybox-2x.png";
+import paybox_1x from "./paybox-1x.png";
+import vizual_2x from "./vizual-2x.png";
+import vizual_1x from "./vizual-1x.png";
+import winwise_2x from "./winwise-2x.png";
+import winwise_1x from "./winwise-1x.png";
+import wisper_2x from "./wisper-2x.png";
+import wisper_1x from "./wisper-1x.png";
 
 export {
 	chain,
@@ -40,4 +52,16 @@ export {
 	policy_2x,
 	policy_1x,
 	terms_list,
+	liberty_assured_2x,
+	liberty_assured_1x,
+	liberty_pay_2x,
+	liberty_pay_1x,
+	paybox_2x,
+	paybox_1x,
+	vizual_2x,
+	vizual_1x,
+	winwise_2x,
+	winwise_1x,
+	wisper_2x,
+	wisper_1x,
 };
