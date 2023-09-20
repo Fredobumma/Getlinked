@@ -7,18 +7,21 @@ export default {
 			laptop: "1024px",
 		},
 		extend: {
+			backgroundImage: {
+				button:
+					"linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%)",
+			},
 			colors: {
 				background: "#150E28",
 				primary: "#D434FE",
 				secondary: "#903AFF",
 				abstract: "#FF26B9",
 			},
-			backgroundImage: {
-				button:
-					"linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%)",
-			},
 			fontFamily: {
 				heading: ["Clash Display", "sans-serif"],
+			},
+			listStyleImage: {
+				"term-list": 'url("/src/assets/terms-list.svg")',
 			},
 			spacing: {
 				card: "min(1%, 10px)",

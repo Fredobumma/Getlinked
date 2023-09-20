@@ -15,6 +15,9 @@ import reward_1x from "./reward-1x.png";
 import gold_medal_2x from "./gold-medal-2x.png";
 import silver_medal_2x from "./silver-medal-2x.png";
 import bronze_medal_2x from "./bronze-medal-2x.png";
+import policy_2x from "./policy-2x.png";
+import policy_1x from "./policy-1x.png";
+import terms_list from "./terms-list.svg";
 
 export {
 	chain,
@@ -34,4 +37,7 @@ export {
 	gold_medal_2x,
 	silver_medal_2x,
 	bronze_medal_2x,
+	policy_2x,
+	policy_1x,
+	terms_list,
 };
