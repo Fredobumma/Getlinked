@@ -20,6 +20,10 @@ export default {
 			fontFamily: {
 				heading: ["Clash Display", "sans-serif"],
 			},
+			spacing: {
+				card: "min(1%, 10px)",
+				min10px: "min(3%, 10px)",
+			},
 		},
 	},
 	plugins: [],
