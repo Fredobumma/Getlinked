@@ -5,6 +5,7 @@ import {
 	Faq,
 	GuideLines,
 	Introduction,
+	NavBar,
 	Policy,
 	Rewards,
 	Sponsors,
@@ -13,7 +14,7 @@ import {
 export const Home = () => {
 	return (
 		<>
-			<Sponsors />
+			<NavBar />
 		</>
 	);
 };

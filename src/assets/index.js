@@ -1,3 +1,5 @@
+import harmburgerMenu from "./harmburgerMenu.png";
+import closeMenu from "./closeMenu.png";
 import chain from "./chain.png";
 import creative from "./creative.png";
 import spark from "./spark.png";
@@ -32,6 +34,8 @@ import wisper_2x from "./wisper-2x.png";
 import wisper_1x from "./wisper-1x.png";
 
 export {
+	harmburgerMenu,
+	closeMenu,
 	chain,
 	creative,
 	spark,
