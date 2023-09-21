@@ -32,6 +32,12 @@ import winwise_2x from "./winwise-2x.png";
 import winwise_1x from "./winwise-1x.png";
 import wisper_2x from "./wisper-2x.png";
 import wisper_1x from "./wisper-1x.png";
+import instagram from "./instagram.png";
+import linkedIn from "./linkedin.png";
+import facebook from "./facebook.png";
+import x_twitter from "./x-twitter.png";
+import phone from "./phone.png";
+import location from "./location.png";
 
 export {
 	harmburgerMenu,
@@ -68,4 +74,10 @@ export {
 	winwise_1x,
 	wisper_2x,
 	wisper_1x,
+	instagram,
+	linkedIn,
+	facebook,
+	x_twitter,
+	phone,
+	location,
 };

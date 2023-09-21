@@ -6,3 +6,4 @@ export * from "./rewards";
 export * from "./policy";
 export * from "./sponsors";
 export * from "./navBar";
+export * from "./footer";
