@@ -39,6 +39,9 @@ import x_twitter from "./x-twitter.png";
 import phone from "./phone.png";
 import location from "./location.png";
 import back_btn from "./back-btn.png";
+import register_2x from "./register-2x.png";
+import register_1x from "./register-1x.png";
+import movement from "./movement.png";
 
 export {
 	harmburgerMenu,
@@ -82,4 +85,7 @@ export {
 	phone,
 	location,
 	back_btn,
+	register_2x,
+	register_1x,
+	movement,
 };

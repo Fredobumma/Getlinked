@@ -5,4 +5,5 @@ export * from "./button";
 export * from "./logo";
 export * from "./picture";
 export * from "./input";
+export * from "./selectOptions";
 export * from "./socialAccounts";
