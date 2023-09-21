@@ -1,4 +1,4 @@
-import { Button, Figure, Heading, Text } from "src/components";
+import { Button, Figure, Heading, Input, Text } from "src/components";
 import { back_btn, facebook, instagram, linkedIn, x_twitter } from "src/assets";
 
 export const Contact = () => {
@@ -75,11 +75,11 @@ export const Contact = () => {
 				</Text>
 				<form className="space-y-[25px] laptop:space-y-10">
 					{inputs.map(({ name, type, placeholder }) => (
-						<input
+						<Input
 							name={name}
 							type={type}
 							placeholder={placeholder}
-							className="bg-transparent block border border-white leading-none placeholder:text-white px-6 py-3.5 rounded w-full laptop:px-[30px]"
+							className="block"
 						/>
 					))}
 					<textarea
