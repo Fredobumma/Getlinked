@@ -1,38 +1,8 @@
-import {
-	facebook,
-	instagram,
-	linkedIn,
-	location,
-	phone,
-	x_twitter,
-} from "src/assets";
-import { Figure, Heading, Logo, Text } from "src/components";
+import { Figure, Heading, Logo, Text, SocialAccounts } from "src/components";
+import { location, phone } from "src/assets";
 
 export const Footer = () => {
 	const navLinks = ["Overview", "Timeline", "FAQs", "Register"];
-
-	const socialAccounts = [
-		{
-			title: "Instagram logo",
-			image: instagram,
-			path: "https://www.instagram.com/",
-		},
-		{
-			title: "X-twitter logo",
-			image: x_twitter,
-			path: "https://twitter.com/getLinkedai",
-		},
-		{
-			title: "Facebook logo",
-			image: facebook,
-			path: "https://www.facebook.com/",
-		},
-		{
-			title: "LinkedIn logo",
-			image: linkedIn,
-			path: "https://ng.linkedin.com/company/getlinked-ai?trk=public_post_main-feed-card_reshare_feed-actor-name",
-		},
-	];
 
 	const contacts = [
 		{ content: "+234 679 81819", image: phone, path: "tel:+234 679 81819" },
@@ -77,18 +47,11 @@ export const Footer = () => {
 							</li>
 						))}
 					</ul>
-					<div className="flex gap-4 items-end">
-						<Text className="text-primary text-xs tab:text-xs laptop:text-xs">
-							Follow us
-						</Text>
-						<nav className="flex items-center gap-4">
-							{socialAccounts.map(({ title, image, path }) => (
-								<a href={path}>
-									<img src={image} alt={title} />
-								</a>
-							))}
-						</nav>
-					</div>
+					<SocialAccounts
+						containerStyles="gap-4 items-end"
+						textStyles="tab:text-xs laptop:text-xs"
+						iconStyles="gap-4"
+					/>
 				</nav>
 				<div>
 					<Heading
@@ -98,8 +61,8 @@ export const Footer = () => {
 						Contact Us
 					</Heading>
 					<ul className="inline-block mt-2.5 space-y-[22px] text-left laptop:mt-5">
-						{contacts.map(({ content, image, path }) => (
-							<li className="flex items-start gap-4">
+						{contacts.map(({ content, image, path }, index) => (
+							<li key={index} className="flex items-start gap-4">
 								<Figure image={image} />
 								<a href={path} className="laptop:max-w-[120px]">
 									{content}

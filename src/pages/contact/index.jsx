@@ -1,30 +1,14 @@
-import { Button, Figure, Heading, Input, Text } from "src/components";
-import { back_btn, facebook, instagram, linkedIn, x_twitter } from "src/assets";
+import {
+	Button,
+	Figure,
+	Heading,
+	Input,
+	SocialAccounts,
+	Text,
+} from "src/components";
+import { back_btn } from "src/assets";
 
 export const Contact = () => {
-	const socialAccounts = [
-		{
-			title: "Instagram logo",
-			image: instagram,
-			path: "https://www.instagram.com/",
-		},
-		{
-			title: "X-twitter logo",
-			image: x_twitter,
-			path: "https://twitter.com/getLinkedai",
-		},
-		{
-			title: "Facebook logo",
-			image: facebook,
-			path: "https://www.facebook.com/",
-		},
-		{
-			title: "LinkedIn logo",
-			image: linkedIn,
-			path: "https://ng.linkedin.com/company/getlinked-ai?trk=public_post_main-feed-card_reshare_feed-actor-name",
-		},
-	];
-
 	const inputs = [
 		{ name: "firstName", type: "text", placeholder: "First Name" },
 		{ name: "email", type: "email", placeholder: "Mail" },
@@ -54,16 +38,11 @@ export const Contact = () => {
 						{content}
 					</Text>
 				))}
-				<div className="flex flex-col gap-3.5 mt-[35px] text-left">
-					<Text className="text-primary laptop:text-base">Share on</Text>
-					<nav className="flex items-center gap-4">
-						{socialAccounts.map(({ title, image, path }) => (
-							<a href={path}>
-								<img src={image} alt={title} />
-							</a>
-						))}
-					</nav>
-				</div>
+				<SocialAccounts
+					containerStyles="flex-col gap-3.5 mt-[35px] text-left"
+					textStyles="laptop:text-base"
+					iconStyles="gap-4"
+				/>
 			</div>
 			<div className="max-w-[300px] mx-auto rounded-xl text-left w-full tab:max-w-[500px] laptop:shadow-form laptop:bg-white/[.03] laptop:max-w-[620px] laptop:px-24 laptop:py-[70px]">
 				<Figure image={back_btn} className="mb-10 w-6 laptop:hidden" />
@@ -74,8 +53,9 @@ export const Contact = () => {
 					Email us below to any question related to our event
 				</Text>
 				<form className="space-y-[25px] laptop:space-y-10">
-					{inputs.map(({ name, type, placeholder }) => (
+					{inputs.map(({ name, type, placeholder }, index) => (
 						<Input
+							key={index}
 							name={name}
 							type={type}
 							placeholder={placeholder}
@@ -92,16 +72,11 @@ export const Contact = () => {
 						<Button className="inline-block px-14 py-[17px]">Submit</Button>
 					</div>
 				</form>
-				<div className="flex flex-col gap-[5px] mt-10 text-center laptop:hidden">
-					<Text className="text-primary text-xs tab:text-sm">Share on</Text>
-					<nav className="flex items-center justify-center gap-3.5">
-						{socialAccounts.map(({ title, image, path }) => (
-							<a href={path}>
-								<img src={image} alt={title} />
-							</a>
-						))}
-					</nav>
-				</div>
+				<SocialAccounts
+					containerStyles="flex-col gap-[5px] mt-10 text-center laptop:hidden"
+					textStyles="tab:text-sm"
+					iconStyles="justify-center gap-3.5"
+				/>
 			</div>
 		</section>
 	);
