@@ -38,6 +38,7 @@ import facebook from "./facebook.png";
 import x_twitter from "./x-twitter.png";
 import phone from "./phone.png";
 import location from "./location.png";
+import back_btn from "./back-btn.png";
 
 export {
 	harmburgerMenu,
@@ -80,4 +81,5 @@ export {
 	x_twitter,
 	phone,
 	location,
+	back_btn,
 };
