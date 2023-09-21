@@ -26,6 +26,9 @@ export default {
 			fontFamily: {
 				heading: ["Clash Display", "sans-serif"],
 			},
+			fontSize: {
+				"32px": "32px",
+			},
 			listStyleImage: {
 				"term-list": 'url("/src/assets/terms-list.svg")',
 			},

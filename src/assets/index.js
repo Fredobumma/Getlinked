@@ -42,6 +42,8 @@ import back_btn from "./back-btn.png";
 import register_2x from "./register-2x.png";
 import register_1x from "./register-1x.png";
 import movement from "./movement.png";
+import congratulations_2x from "./congratulations-2x.png";
+import congratulations_1x from "./congratulations-1x.png";
 
 export {
 	harmburgerMenu,
@@ -88,4 +90,6 @@ export {
 	register_2x,
 	register_1x,
 	movement,
+	congratulations_2x,
+	congratulations_1x,
 };

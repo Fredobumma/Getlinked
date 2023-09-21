@@ -7,3 +7,4 @@ export * from "./policy";
 export * from "./sponsors";
 export * from "./navBar";
 export * from "./footer";
+export * from "./congratulations";
