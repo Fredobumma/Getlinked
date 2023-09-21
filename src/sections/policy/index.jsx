@@ -24,7 +24,7 @@ export const Policy = () => {
 					Below are our privacy & policy, which outline a lot of goodies. it’s
 					our aim to always take of our participant
 				</Text>
-				<div className="rounded-[5px] border border-primary bg-[#d9d9d9]/[.03] mb-12 px-3.5 py-12 text-left w-full tab:mb-0 laptop:py-[60px]">
+				<div className="rounded-5px border border-primary bg-[#d9d9d9]/[.03] mb-12 px-3.5 py-12 text-left w-full tab:mb-0 laptop:py-[60px]">
 					<div className="max-w-[270px] mx-auto tab:max-w-[360px] laptop:max-w-[420px]">
 						<Text className="!leading-[216.4%] text-center text-xs tab:text-sm  laptop:!text-sm laptop:!leading-[27.5px]">
 							At getlinked tech Hackathon 1.0, we value your privacy and are
@@ -44,11 +44,15 @@ export const Policy = () => {
 							Here are terms of our Standard License:
 						</Text>
 						<ul>
-							{listItems.map((item) => (
-								<li className="flex gap-3.5 mb-6 !leading-[175.9%] text-xs tab:text-sm laptop:mb-[18px]">
+							{listItems.map((item, index) => (
+								<li
+									key={index}
+									className="flex gap-3.5 mb-6 !leading-[175.9%] text-xs tab:text-sm laptop:mb-[18px]"
+								>
 									<Figure
 										image={terms_list}
 										className="min-w-[17px] h-[17px] mt-1.5"
+										altText="List marker"
 									/>
 									{item}
 								</li>

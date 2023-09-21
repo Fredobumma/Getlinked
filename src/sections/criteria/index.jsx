@@ -42,8 +42,11 @@ export const Criteria = () => {
 					Judging Criteria
 					<p className="text-primary">Key attributes</p>
 				</Heading>
-				{paragraphs.map(({ title, text }) => (
-					<Text className="mb-5 mx-auto !leading-[173.5%] !text-xs tab:mb-6 tab:!text-sm tab:!leading-[173.5%] laptop:mb-[28px]">
+				{paragraphs.map(({ title, text }, index) => (
+					<Text
+						key={index}
+						className="mb-5 mx-auto !leading-[173.5%] !text-xs tab:mb-6 tab:!text-sm tab:!leading-[173.5%] laptop:mb-[28px]"
+					>
 						<span className="font-bold text-abstract text-[13px] tab:text-base">
 							{title}
 						</span>

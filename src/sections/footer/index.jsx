@@ -5,11 +5,17 @@ export const Footer = () => {
 	const navLinks = ["Overview", "Timeline", "FAQs", "Register"];
 
 	const contacts = [
-		{ content: "+234 679 81819", image: phone, path: "tel:+234 679 81819" },
+		{
+			content: "+234 679 81819",
+			image: phone,
+			path: "tel:+234 679 81819",
+			altText: "Phone icon",
+		},
 		{
 			content: "27,Alara Street Yaba 100012 Lagos State",
 			image: location,
 			path: "https://www.google.com/maps/place/27+Alara+St,+Sabo+yaba+101245,+Lagos/@6.5077674,3.3844502,17z/data=!3m1!4b1!4m6!3m5!1s0x103b8cf3fae871f1:0x33fc1ca3c387cf64!8m2!3d6.5077674!4d3.3844502!16s%2Fg%2F11h2dm_gnm?entry=ttu",
+			altText: "Location icon",
 		},
 	];
 
@@ -64,7 +70,7 @@ export const Footer = () => {
 						{contacts.map(({ content, image, path }, index) => (
 							<li key={index} className="flex items-start gap-4">
 								<Figure image={image} />
-								<a href={path} className="laptop:max-w-[120px]">
+								<a href={path} className="-mt-1 laptop:max-w-[120px]">
 									{content}
 								</a>
 							</li>

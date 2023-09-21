@@ -30,7 +30,7 @@ export const SocialAccounts = ({ containerStyles, textStyles, iconStyles }) => {
 			<Text className={`text-primary text-xs ${textStyles}`}>Share on</Text>
 			<nav className={`flex items-center ${iconStyles}`}>
 				{socialAccounts.map(({ title, image, path }, index) => (
-					<a key={index} href={path}>
+					<a key={index} href={path} target="_blank">
 						<img src={image} alt={title} />
 					</a>
 				))}

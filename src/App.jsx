@@ -4,7 +4,7 @@ import { Contact, Home, Register } from "./pages";
 function App() {
 	return (
 		<>
-			<Register />
+			<Home />
 		</>
 	);
 }

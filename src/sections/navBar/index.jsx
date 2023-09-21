@@ -34,6 +34,7 @@ export const NavBar = () => {
 					<Figure
 						image={menu ? closeMenu : harmburgerMenu}
 						className="relative h-5 w-5 z-10"
+						altText="Menu icon"
 					/>
 				</div>
 			</div>

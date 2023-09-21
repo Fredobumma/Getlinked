@@ -40,7 +40,7 @@ export const Register = () => {
 	const selectOptions = [
 		{
 			id: "category",
-			label: "category",
+			label: "Category",
 			containerStyles: "w-[90%] tab:w-3/5 laptop:w-full",
 			options: ["Select your category", "Fintech", "Health"],
 		},
@@ -69,22 +69,25 @@ export const Register = () => {
 				>
 					Register
 				</Heading>
-
 				<div className="flex gap-1.5 items-end mt-2 tab:mt-10 laptop:mt-[30px]">
-					<Text className="!leading-none text-xs tab:text-xs laptop:text-sm">
+					<Text className="!leading-none text-xs tab:text-xs laptop:!text-sm">
 						Be part of this movement!
 					</Text>
 					<div className="border-b border-dashed border-primary w-[84px] tab:w-[90px] laptop:w-[100px]">
-						<Figure image={movement} className="w-1/2 mx-auto" />
+						<Figure
+							image={movement}
+							className="w-1/2 mx-auto"
+							altText="People walking by"
+						/>
 					</div>
 				</div>
-				<Text className="capitalize text-xl mt-2 mb-6 tab:text-xl laptop:mb-[30px] laptop:mt-5 laptop:text-2xl">
+				<Text className="capitalize text-xl mt-2 mb-6 tab:text-xl laptop:mb-[30px] laptop:mt-5 laptop:!text-2xl">
 					CREATE YOUR ACCOUNT
 				</Text>
 				<form>
 					<div className="laptop:grid laptop:grid-cols-2 laptop:gap-x-8">
-						{inputs.map(({ type, label, id, placeholder }) => (
-							<div>
+						{inputs.map(({ type, label, id, placeholder }, index) => (
+							<div key={index}>
 								<Input
 									type={type}
 									label={label}
@@ -99,17 +102,19 @@ export const Register = () => {
 					</div>
 
 					<div className="flex gap-5 w-full laptop:gap-8">
-						{selectOptions.map(({ id, label, containerStyles, options }) => (
-							<div className={`${containerStyles}`}>
-								<SelectOptions
-									id={id}
-									label={label}
-									name={id}
-									labelStyles="mb-[5px] text-[13px] laptop:text-sm laptop:mb-2.5"
-									options={options}
-								/>
-							</div>
-						))}
+						{selectOptions.map(
+							({ id, label, containerStyles, options }, index) => (
+								<div key={index} className={`${containerStyles}`}>
+									<SelectOptions
+										id={id}
+										label={label}
+										name={id}
+										labelStyles="mb-[5px] text-[13px] laptop:text-sm laptop:mb-2.5"
+										options={options}
+									/>
+								</div>
+							),
+						)}
 					</div>
 					<div className="text-center mt-[15px] mb-6 laptop:mt-6 laptop:mb-0">
 						<Text className="italic text-left text-abstract text-[9px] tab:text-xs laptop:text-xs">

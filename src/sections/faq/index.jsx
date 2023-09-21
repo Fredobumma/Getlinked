@@ -26,8 +26,11 @@ export const Faq = () => {
 					getlinked Hackathon 1.0
 				</Text>
 				<div className="text-left">
-					{questions.map((question) => (
-						<div className="flex justify-between border-b border-b-primary gap-5 mb-3.5 pb-2.5 laptop:mb-[25px]">
+					{questions.map((question, index) => (
+						<div
+							key={index}
+							className="flex justify-between border-b border-b-primary gap-5 mb-3.5 pb-2.5 laptop:mb-[25px]"
+						>
 							<Text className="max-w-[230px] mb-1 text-xs tab:max-w-[250px] tab:text-sm laptop:max-w-none laptop:text-sm">
 								{question}
 							</Text>

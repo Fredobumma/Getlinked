@@ -45,7 +45,11 @@ export const Contact = () => {
 				/>
 			</div>
 			<div className="max-w-[300px] mx-auto rounded-xl text-left w-full tab:max-w-[500px] laptop:shadow-form laptop:bg-white/[.03] laptop:max-w-[620px] laptop:px-24 laptop:py-[70px]">
-				<Figure image={back_btn} className="mb-10 w-6 laptop:hidden" />
+				<Figure
+					image={back_btn}
+					className="mb-10 w-6 laptop:hidden"
+					altText="Back button"
+				/>
 				<Text className="font-semibold max-w-[200px] text-xl text-primary tab:max-w-[320px] tab:text-xl laptop:mb-[34px]">
 					Questions or need assistance? Let us know about it
 				</Text>

@@ -13,6 +13,7 @@ export const Introduction = () => {
 				<Figure
 					image={arrow}
 					className="w-[22.5px] h-auto mt-2.5 mb-[22.5px] mx-auto -bottom-[15%] -right-[5%] tab:w-9 tab:absolute tab:mx-0 laptop:w-[50px] laptop:-bottom-[10%] laptop:-right-[5%]"
+					altText="Background decorator"
 				/>
 			</div>
 			<div className="max-w-[320px] tab:max-w-[420px] tab:text-left tab:w-1/2 laptop:max-w-[540px]">

@@ -44,7 +44,7 @@ export const Sponsors = () => {
 				Getlinked Hackathon 1.0 is honored to have the following major companies
 				as its partners and sponsors
 			</Text>
-			<div className="border border-primary bg-white/[.01] grid grid-cols-3 max-w-[340px] mx-auto place-items-center py-10 rounded-[5px] tab:max-w-[540px] laptop:max-w-[1255px] laptop:py-36">
+			<div className="border border-primary bg-white/[.01] grid grid-cols-3 max-w-[340px] mx-auto place-items-center py-10 rounded-5px tab:max-w-[540px] laptop:max-w-[1255px] laptop:py-36">
 				{listItems.map(({ image2x, image1x, alt }, index) => (
 					<div
 						key={index}
