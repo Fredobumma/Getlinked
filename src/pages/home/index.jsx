@@ -3,6 +3,7 @@ import {
 	Faq,
 	Footer,
 	GuideLines,
+	Hero,
 	Introduction,
 	NavBar,
 	Policy,
@@ -13,7 +14,7 @@ import {
 export const Home = () => {
 	return (
 		<>
-			<Footer />
+			<Hero />
 		</>
 	);
 };

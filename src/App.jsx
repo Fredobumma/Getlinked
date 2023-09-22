@@ -5,7 +5,7 @@ import { Congratulations } from "./sections";
 function App() {
 	return (
 		<>
-			<Congratulations />
+			<Home />
 		</>
 	);
 }

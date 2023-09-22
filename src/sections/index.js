@@ -1,3 +1,4 @@
+export * from "./hero";
 export * from "./introduction";
 export * from "./criteria";
 export * from "./guidelines";

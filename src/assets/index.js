@@ -1,5 +1,8 @@
 import harmburgerMenu from "./harmburgerMenu.png";
 import closeMenu from "./closeMenu.png";
+import hackathon_guy_2x from "./hackathon-guy-2x.png";
+import hackathon_guy_1x from "./hackathon-guy-1x.png";
+import innovation from "./innovation.svg";
 import chain from "./chain.png";
 import creative from "./creative.png";
 import spark from "./spark.png";
@@ -48,6 +51,9 @@ import congratulations_1x from "./congratulations-1x.png";
 export {
 	harmburgerMenu,
 	closeMenu,
+	hackathon_guy_2x,
+	hackathon_guy_1x,
+	innovation,
 	chain,
 	creative,
 	spark,
