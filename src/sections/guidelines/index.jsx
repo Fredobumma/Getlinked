@@ -19,7 +19,10 @@ export const GuideLines = () => {
 					Rules and
 					<p className="text-primary">Guidelines</p>
 				</Heading>
-				<Text className="mx-auto !leading-[27.5px] tab:text-sm">
+				<Text
+					data-aos="fade-right"
+					className="mx-auto !leading-[27.5px] tab:text-sm"
+				>
 					Our tech hackathon is a melting pot of visionaries, and its purpose is
 					as clear as day: to shape the future. Whether you're a coding genius,
 					a design maverick, or a concept wizard, you'll have the chance to

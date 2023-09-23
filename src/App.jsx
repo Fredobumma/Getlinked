@@ -3,8 +3,9 @@ import {
 	Navigate,
 	RouterProvider,
 } from "react-router-dom";
-
+import AOS from "aos";
 import { Error, NotFound, Root } from "./pages";
+import "aos/dist/aos.css";
 import "./App.css";
 
 function App() {
@@ -36,6 +37,8 @@ function App() {
 			],
 		},
 	]);
+
+	AOS.init();
 
 	return (
 		<>

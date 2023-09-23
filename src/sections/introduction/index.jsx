@@ -19,7 +19,10 @@ export const Introduction = () => {
 					altText="Background decorator"
 				/>
 			</div>
-			<div className="max-w-[320px] tab:max-w-[420px] tab:text-left tab:w-1/2 laptop:max-w-[540px]">
+			<div
+				data-aos="fade-up"
+				className="max-w-[320px] tab:max-w-[420px] tab:text-left tab:w-1/2 laptop:max-w-[540px]"
+			>
 				<Heading
 					type="h2"
 					className="font-heading font-bold text-xl mb-2.5 tab:text-2xl tab:mb-3.5 laptop:mb-4 laptop:text-[32px] laptop:leading-normal"
