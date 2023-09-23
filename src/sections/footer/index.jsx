@@ -86,7 +86,11 @@ export const Footer = () => {
 					</Heading>
 					<ul className="inline-block mt-2.5 space-y-[22px] text-left laptop:mt-5">
 						{contacts.map(({ content, image, path }, index) => (
-							<li key={index} className="flex items-start gap-4">
+							<li
+								title="Check us out"
+								key={index}
+								className="flex items-start gap-4"
+							>
 								<Figure image={image} />
 								<AnchorLink
 									path={path}

@@ -38,7 +38,7 @@ export const SocialAccounts = ({
 			<nav className={`flex items-center ${iconStyles}`}>
 				{socialAccounts.map(({ title, image, path }, index) => (
 					<AnchorLink key={index} path={path} target="_blank">
-						<img src={image} alt={title} />
+						<img src={image} alt={title} title="Check us out" />
 					</AnchorLink>
 				))}
 			</nav>

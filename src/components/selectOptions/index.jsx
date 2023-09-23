@@ -4,7 +4,6 @@ export const SelectOptions = ({
 	name,
 	labelStyles,
 	options,
-	errors,
 	register,
 }) => {
 	return (
