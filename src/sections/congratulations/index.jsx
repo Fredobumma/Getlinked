@@ -1,9 +1,18 @@
+import { useNavigate } from "react-router-dom";
 import { congratulations_1x, congratulations_2x } from "src/assets";
 import { Button, Heading, Picture, Text } from "src/components";
-export const Congratulations = () => {
+
+export const Congratulations = ({ successMessage, setSuccessMessage }) => {
+	const navigate = useNavigate();
+
+	const handleClick = () => {
+		setSuccessMessage(!successMessage);
+		navigate("/");
+	};
+
 	return (
-		<aside className="flex h-screen items-center my-10 laptop:my-40">
-			<div className="border border-primary bg-white/[.01] max-w-[320px] mx-auto pb-[30px] pt-[18px] px-[30px] relative rounded-5px z-[100] tab:max-w-[540px] laptop:max-w-[700px] laptop:pb-[70px] laptop:pt-[34px] laptop:px-[60px]">
+		<aside className="absolute m-auto inset-0 text-center mb-5">
+			<div className="border border-primary bg-white/[.01] max-w-[320px] mx-auto pb-[30px] pt-[18px] px-[30px] sticky rounded-5px z-[100] tab:max-w-[540px] laptop:max-w-[700px] laptop:pb-[70px] laptop:pt-[34px] laptop:px-[60px]">
 				<Picture
 					image2x={congratulations_2x}
 					image1x={congratulations_1x}
@@ -22,9 +31,11 @@ export const Congratulations = () => {
 						&#129320;
 					</span>
 				</Text>
-				<Button className="block mt-6 py-4 laptop:mt-[35px]">Back</Button>
+				<div onClick={handleClick}>
+					<Button className="block mt-6 py-4 laptop:mt-[35px]">Back</Button>
+				</div>
 			</div>
-			<div className="fixed bg-background/[.93] h-screen inset-0 m-auto w-screen z-[90]"></div>
+			<div className="fixed bg-background/[.93] h-full inset-0 m-auto w-screen z-[90]"></div>
 		</aside>
 	);
 };

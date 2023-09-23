@@ -49,6 +49,9 @@ import back_btn from "./back-btn.png";
 import register_2x from "./register-2x.png";
 import register_1x from "./register-1x.png";
 import movement from "./movement.png";
+import star from "./star.png";
+import star_purple from "./star-purple.png";
+import star_gray from "./star-gray.png";
 import congratulations_2x from "./congratulations-2x.png";
 import congratulations_1x from "./congratulations-1x.png";
 
@@ -104,6 +107,9 @@ export {
 	register_2x,
 	register_1x,
 	movement,
+	star,
+	star_gray,
+	star_purple,
 	congratulations_2x,
 	congratulations_1x,
 };

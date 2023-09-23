@@ -1,9 +1,9 @@
-import { Heading, Picture, Text } from "src/components";
+import { Gradient, Heading, Picture, Stars, Text } from "src/components";
 import { guideline_2x, guideline_1x } from "src/assets";
 
 export const GuideLines = () => {
 	return (
-		<section className="border-y border-white/[0.18] flex flex-col items-center justify-center -mx-4 pb-12 px-4 tab:flex-row tab:gap-[50px] tab:-mx-8 tab:px-8 laptop:-mx-12 laptop:px-12 laptop:pb-0">
+		<section className="relative border-y border-white/[0.18] flex flex-col items-center justify-center -mx-4 pb-12 px-4 tab:flex-row tab:gap-[50px] tab:-mx-8 tab:px-8 laptop:-mx-12 laptop:px-12 laptop:pb-0">
 			<div className="tab:order-2">
 				<Picture
 					image2x={guideline_2x}
@@ -28,6 +28,8 @@ export const GuideLines = () => {
 					change the world, that's what we're all about!
 				</Text>
 			</div>
+			<Gradient />
+			<Stars />
 		</section>
 	);
 };

@@ -8,3 +8,5 @@ export * from "./input";
 export * from "./selectOptions";
 export * from "./socialAccounts";
 export * from "./anchorLink";
+export * from "./gradient";
+export * from "./stars";

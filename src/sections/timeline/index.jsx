@@ -1,4 +1,4 @@
-import { Figure, Heading, Text } from "src/components";
+import { Figure, Gradient, Heading, Stars, Text } from "src/components";
 import { timeline_1x, timeline_2x, top_timeline } from "src/assets";
 
 export const Timeline = () => {
@@ -67,7 +67,7 @@ export const Timeline = () => {
 	return (
 		<section
 			id="timeline"
-			className="pt-20 pb-[74px] laptop:pb-28 laptop:pt-[72px]"
+			className="relative pt-20 pb-[74px] laptop:pb-28 laptop:pt-[72px]"
 		>
 			<Heading
 				type="h2"
@@ -150,6 +150,8 @@ export const Timeline = () => {
 					</div>
 				</div>
 			))}
+			<Gradient />
+			<Stars />
 		</section>
 	);
 };

@@ -16,7 +16,7 @@ export default {
 				button:
 					"linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%)",
 				gradient:
-					"radial-gradient(circle, rgba(74,19,120,1) 60%, rgba(148,187,233,1) 100%)",
+					"radial-gradient(circle, rgba(74,19,120,0.3) 60%, rgba(148,187,233,0.3) 100%)",
 				timeLine: "linear-gradient(270deg, #903AFF 0%, #D434FE 100%)",
 			},
 			borderRadius: {

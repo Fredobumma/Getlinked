@@ -1,4 +1,4 @@
-import { Heading, Picture, Text } from "src/components";
+import { Gradient, Heading, Picture, Stars, Text } from "src/components";
 import { faq_2x, faq_1x } from "src/assets";
 
 export const Faq = () => {
@@ -14,7 +14,7 @@ export const Faq = () => {
 	return (
 		<section
 			id="faqs"
-			className="border-y border-white/[0.18] flex flex-col items-center justify-center -mx-4 pb-[50px] pt-[60px] px-4 tab:flex-row tab:gap-[50px] tab:-mx-8 tab:px-8 laptop:-mx-12 laptop:pb-[60px] laptop:pt-[74px] laptop:px-12"
+			className="relative border-y border-white/[0.18] flex flex-col items-center justify-center -mx-4 pb-[50px] pt-[60px] px-4 tab:flex-row tab:gap-[50px] tab:-mx-8 tab:px-8 laptop:-mx-12 laptop:pb-[60px] laptop:pt-[74px] laptop:px-12"
 		>
 			<div className="max-w-[320px] mb-[66px] tab:mb-0 tab:text-left tab:max-w-[420px] tab:w-1/2 laptop:max-w-[540px]">
 				<Heading
@@ -46,6 +46,7 @@ export const Faq = () => {
 			<div className="animate-pulse">
 				<Picture image2x={faq_2x} image1x={faq_1x} imageText="Rules and faqs" />
 			</div>
+			<Gradient /> <Stars />
 		</section>
 	);
 };

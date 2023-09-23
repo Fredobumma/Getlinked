@@ -1,11 +1,11 @@
-import { Heading, Text, Picture, Figure } from "src/components";
+import { Heading, Text, Picture, Figure, Stars } from "src/components";
 import { arrow, big_idea_2x, big_idea_1x } from "src/assets";
 
 export const Introduction = () => {
 	return (
 		<section
 			id="overview"
-			className="bg-[#140D27] flex flex-col items-center justify-center -mx-4 pb-[70px] px-4 pt-[30px] tab:flex-row tab:gap-10 tab:-mx-8 tab:px-8 tab:py-[60px] laptop:gap-20 laptop:-mx-12 laptop:px-12"
+			className="relative bg-[#140D27] flex flex-col items-center justify-center -mx-4 pb-[70px] px-4 pt-[30px] tab:flex-row tab:gap-10 tab:-mx-8 tab:px-8 tab:py-[60px] laptop:gap-20 laptop:-mx-12 laptop:px-12"
 		>
 			<div className="animate-wiggle tab:relative tab:min-w-1/2">
 				<Picture
@@ -36,6 +36,7 @@ export const Introduction = () => {
 					change the world, that's what we're all about!
 				</Text>
 			</div>
+			<Stars />
 		</section>
 	);
 };

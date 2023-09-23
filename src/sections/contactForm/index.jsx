@@ -1,4 +1,12 @@
-import { Figure, Heading, Input, SocialAccounts, Text } from "src/components";
+import {
+	Figure,
+	Gradient,
+	Heading,
+	Input,
+	SocialAccounts,
+	Stars,
+	Text,
+} from "src/components";
 import { back_btn } from "src/assets";
 
 export const ContactForm = ({ register, handleSubmit, errors }) => {
@@ -18,7 +26,7 @@ export const ContactForm = ({ register, handleSubmit, errors }) => {
 	];
 
 	return (
-		<section className="pb-10 laptop:flex laptop:justify-center laptop:py-20">
+		<section className="relative pb-10 laptop:flex laptop:justify-center laptop:py-20">
 			<div className="hidden max-w-[272px] mx-auto text-left laptop:block laptop:mt-14">
 				<Heading
 					type="h1"
@@ -87,6 +95,8 @@ export const ContactForm = ({ register, handleSubmit, errors }) => {
 					iconStyles="justify-center gap-3.5"
 				/>
 			</div>
+			<Gradient />
+			<Stars />
 		</section>
 	);
 };

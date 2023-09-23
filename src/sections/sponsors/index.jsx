@@ -1,4 +1,4 @@
-import { Heading, Picture, Text } from "src/components";
+import { Gradient, Heading, Picture, Stars, Text } from "src/components";
 import {
 	liberty_assured_2x,
 	liberty_assured_1x,
@@ -33,7 +33,7 @@ export const Sponsors = () => {
 	];
 
 	return (
-		<section className="pb-[104px] pt-10 laptop:pb-32 laptop:pt-28">
+		<section className="relative pb-[104px] pt-10 laptop:pb-32 laptop:pt-28">
 			<Heading
 				type="h2"
 				className="font-heading font-bold text-xl tab:text-2xl laptop:text-[32px] laptop:leading-normal"
@@ -63,6 +63,8 @@ export const Sponsors = () => {
 					</div>
 				))}
 			</div>
+			<Gradient />
+			<Stars />
 		</section>
 	);
 };

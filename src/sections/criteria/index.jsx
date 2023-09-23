@@ -1,4 +1,11 @@
-import { Button, Heading, Picture, Text } from "src/components";
+import {
+	Button,
+	Gradient,
+	Heading,
+	Picture,
+	Stars,
+	Text,
+} from "src/components";
 import { criteria_2x, criteria_1x } from "src/assets";
 
 export const Criteria = () => {
@@ -26,7 +33,7 @@ export const Criteria = () => {
 	];
 
 	return (
-		<section className="flex flex-col items-center justify-center pt-[74px] pb-[60px] tab:flex-row tab:gap-[50px] laptop:pb-40 laptop:pt-[92px]">
+		<section className="relative flex flex-col items-center justify-center pt-[74px] pb-[60px] tab:flex-row tab:gap-[50px] laptop:pb-40 laptop:pt-[92px]">
 			<div className="tab:w-1/2">
 				<Picture
 					image2x={criteria_2x}
@@ -57,6 +64,8 @@ export const Criteria = () => {
 					Read More
 				</Button>
 			</div>
+			<Gradient />
+			<Stars />
 		</section>
 	);
 };

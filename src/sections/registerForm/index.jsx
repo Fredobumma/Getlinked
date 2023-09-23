@@ -1,9 +1,11 @@
 import {
 	Figure,
+	Gradient,
 	Heading,
 	Input,
 	Picture,
 	SelectOptions,
+	Stars,
 	Text,
 } from "src/components";
 import { movement, register_1x, register_2x } from "src/assets";
@@ -52,7 +54,7 @@ export const RegisterForm = ({ register, handleSubmit, errors }) => {
 	];
 
 	return (
-		<section className="pb-[30px] text-left laptop:flex laptop:items-center laptop:justify-center laptop:py-[60px]">
+		<section className="relative pb-[30px] text-left laptop:flex laptop:items-center laptop:justify-center laptop:py-[60px]">
 			<Text className="font-bold max-w-[264px] mb-[30px] mx-auto text-primary text-[15px] tab:max-w-[500px] tab:text-base laptop:hidden">
 				Register
 			</Text>
@@ -147,6 +149,8 @@ export const RegisterForm = ({ register, handleSubmit, errors }) => {
 					</div>
 				</form>
 			</div>
+			<Gradient />
+			<Stars />
 		</section>
 	);
 };

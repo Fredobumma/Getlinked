@@ -5,6 +5,7 @@ import {
 	Logo,
 	Text,
 	SocialAccounts,
+	Stars,
 } from "src/components";
 import { location, phone } from "src/assets";
 import { scrollToView } from "src/utilities";
@@ -28,7 +29,7 @@ export const Footer = () => {
 	];
 
 	return (
-		<footer className="bg-[#100B20] -mx-4 px-4 py-[50px] text-left tab:-mx-8 tab:px-8 laptop:-mx-12 laptop:px-12 laptop:pt-[70px] laptop:pb-10">
+		<footer className="relative bg-[#100B20] -mx-4 px-4 py-[50px] text-left tab:-mx-8 tab:px-8 laptop:-mx-12 laptop:px-12 laptop:pt-[70px] laptop:pb-10">
 			<div className="max-w-[271px] mx-auto tab:max-w-[400px] laptop:flex laptop:justify-between laptop:max-w-[1072px]">
 				<div className="laptop:flex laptop:flex-col">
 					<Logo />
@@ -107,6 +108,7 @@ export const Footer = () => {
 			<Text className="mt-[60px] text-center text-xs tab:text-xs laptop:mt-[50px] laptop:text-xs">
 				All rights reserved. &copy; getlinked Ltd.
 			</Text>
+			<Stars />
 		</footer>
 	);
 };

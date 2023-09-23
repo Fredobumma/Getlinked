@@ -17,7 +17,7 @@ export const SelectOptions = ({
 				<select
 					name={name}
 					id={id}
-					className="bg-transparent pl-2.5 py-3.5 text-xs w-full active:border-0 hover:border-0"
+					className="bg-transparent pl-2.5 py-3.5 text-xs w-full active:border-0 focus:border-0 hover:border-0 active:outline-none focus:outline-none hover:outline-none"
 					{...register(id)}
 				>
 					{options.map((option, index) => (

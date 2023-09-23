@@ -6,11 +6,11 @@ import {
 	innovation,
 	spark,
 } from "src/assets";
-import { Button, Figure, Heading, Picture, Text } from "src/components";
+import { Button, Figure, Heading, Picture, Stars, Text } from "src/components";
 
 export const Hero = () => {
 	return (
-		<header className="border-b border-white/[0.18] -mx-4 px-4 tab:-mx-8 tab:px-8 laptop:-mx-12 laptop:px-12">
+		<header className="relative border-b border-white/[0.18] -mx-4 px-4 tab:-mx-8 tab:px-8 laptop:-mx-12 laptop:px-12">
 			<div className="font-bold italic max-w-fit mb-10 mx-auto text-base tab:max-w-none tab:mb-20 tab:text-right laptop:text-4xl">
 				Igniting a Revolution in{" "}
 				<div className="inline-flex flex-col">
@@ -81,8 +81,11 @@ export const Hero = () => {
 						image1x={hackathon_guy_1x}
 						imageText="A hackathon tech guy"
 					/>
+					<div className="absolute bg-gradient inset-0 m-auto h-1/3 w-1/3 blur-[50px] rounded-full -z-20"></div>
 				</div>
 			</section>
+			<div className="absolute bg-gradient inset-0 h-1/3 w-1/3 top-0 blur-[50px] rounded-full -z-20"></div>
+			<Stars />
 		</header>
 	);
 };

@@ -1,7 +1,8 @@
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import { RegisterForm } from "src/sections";
+import { RegisterForm, Congratulations } from "src/sections";
 import { http } from "src/services";
 import { notification } from "src/services/notificationServices";
 
@@ -31,11 +32,13 @@ export const Register = () => {
 	} = useForm({
 		resolver: yupResolver(schema),
 	});
+	const [successMessage, setSuccessMessage] = useState(false);
 
 	const onSubmit = async (data) => {
 		try {
 			const response = await http.request("/registration", data);
 			notification(response.statusText);
+			setSuccessMessage(!successMessage);
 		} catch (error) {
 			const message = Object.keys(error.response.data);
 			notification(`Error! Please check ${message[0]}`);
@@ -44,11 +47,21 @@ export const Register = () => {
 
 	return (
 		<>
-			<RegisterForm
-				register={register}
-				handleSubmit={handleSubmit(onSubmit)}
-				errors={errors}
-			/>
+			<section className="relative">
+				<RegisterForm
+					register={register}
+					handleSubmit={handleSubmit(onSubmit)}
+					errors={errors}
+					successMessage={successMessage}
+					setSuccessMessage={setSuccessMessage}
+				/>
+				{successMessage && (
+					<Congratulations
+						successMessage={successMessage}
+						setSuccessMessage={setSuccessMessage}
+					/>
+				)}
+			</section>
 		</>
 	);
 };
