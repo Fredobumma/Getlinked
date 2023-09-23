@@ -3,7 +3,7 @@ import axios from "axios";
 const headers = new Headers();
 headers.append("Content-Type", "application/json");
 
-axios.defaults.baseURL = process.env.REACT_APP_API_URL;
+axios.defaults.baseURL = import.meta.env.VITE_API_URL;
 
 axios.interceptors.response.use(null, (error) => {
 	const expectedError =
@@ -19,6 +19,5 @@ axios.interceptors.response.use(null, (error) => {
 });
 
 export const http = {
-	request: ({ url, data }) =>
-		axios.request({ method: "POST", headers, url, data }),
+	request: (url, data) => axios.request({ method: "POST", headers, url, data }),
 };
