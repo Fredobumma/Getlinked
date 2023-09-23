@@ -1,12 +1,17 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+	createBrowserRouter,
+	Navigate,
+	RouterProvider,
+} from "react-router-dom";
 
-import { Root } from "./pages";
+import { Error, NotFound, Root } from "./pages";
 import "./App.css";
 
 function App() {
 	const router = createBrowserRouter([
 		{
 			element: <Root />,
+			errorElement: <Error />,
 			children: [
 				{
 					path: "/",
@@ -26,6 +31,8 @@ function App() {
 						Component: (await import("./pages")).Register,
 					}),
 				},
+				{ path: "/not-found", element: <NotFound /> },
+				{ path: "*", element: <Navigate to="/not-found" /> },
 			],
 		},
 	]);
