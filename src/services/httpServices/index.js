@@ -1,8 +1,8 @@
 import axios from "axios";
 import { notification } from "src/services";
 
-const headers = new Headers();
-headers.append("Content-Type", "application/json");
+// const headers = new Headers();
+// headers.append("Content-Type", "application/json");
 
 axios.defaults.baseURL = import.meta.env.VITE_API_URL;
 
