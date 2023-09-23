@@ -41,7 +41,7 @@ export const Register = () => {
 			setSuccessMessage(!successMessage);
 		} catch (error) {
 			const message = Object.keys(error.response?.data);
-			notification(`Error! Please check ${message[0]}`);
+			notification(`Error! Please check ${message?.[0] || "form"}`);
 		}
 	};
 
