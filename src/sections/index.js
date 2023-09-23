@@ -9,3 +9,4 @@ export * from "./sponsors";
 export * from "./navBar";
 export * from "./footer";
 export * from "./congratulations";
+export * from "./timeline";

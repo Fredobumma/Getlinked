@@ -22,6 +22,9 @@ import silver_medal_2x from "./silver-medal-2x.png";
 import bronze_medal_2x from "./bronze-medal-2x.png";
 import policy_2x from "./policy-2x.png";
 import policy_1x from "./policy-1x.png";
+import top_timeline from "./top-timeline.svg";
+import timeline_2x from "./timeline-2x.svg";
+import timeline_1x from "./timeline-1x.svg";
 import terms_list from "./terms-list.svg";
 import liberty_assured_2x from "./liberty-assured-2x.png";
 import liberty_assured_1x from "./liberty-assured-1x.png";
@@ -73,6 +76,9 @@ export {
 	bronze_medal_2x,
 	policy_2x,
 	policy_1x,
+	top_timeline,
+	timeline_2x,
+	timeline_1x,
 	terms_list,
 	liberty_assured_2x,
 	liberty_assured_1x,

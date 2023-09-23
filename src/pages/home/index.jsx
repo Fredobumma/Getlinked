@@ -9,12 +9,13 @@ import {
 	Policy,
 	Rewards,
 	Sponsors,
+	Timeline,
 } from "src/sections";
 
 export const Home = () => {
 	return (
 		<>
-			<Hero />
+			<Timeline />
 		</>
 	);
 };
