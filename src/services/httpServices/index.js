@@ -1,4 +1,5 @@
 import axios from "axios";
+import { notification } from "src/services";
 
 const headers = new Headers();
 headers.append("Content-Type", "application/json");
@@ -12,7 +13,7 @@ axios.interceptors.response.use(null, (error) => {
 		error.response.status < 500;
 
 	if (!expectedError) {
-		console.error(error);
+		notification("An unkown error occurred");
 	}
 
 	return Promise.reject(error);

@@ -3,6 +3,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { ContactForm } from "src/sections";
 import { http } from "src/services";
+import { notification } from "src/services/notificationServices";
 
 const message = "Required";
 const schema = yup
@@ -23,8 +24,12 @@ export const Contact = () => {
 	});
 
 	const onSubmit = async (data) => {
-		const response = await http.request("contact-form", data);
-		console.log(response);
+		try {
+			const response = await http.request("/contact-form", data);
+			notification(response.statusText);
+		} catch (error) {
+			notification(error.message);
+		}
 	};
 
 	return (

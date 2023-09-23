@@ -1,5 +1,3 @@
-import { Text } from "src/components";
-
 export const SelectOptions = ({
 	label,
 	id,
@@ -20,22 +18,19 @@ export const SelectOptions = ({
 				<select
 					name={name}
 					id={id}
-					className="bg-transparent pl-2.5 py-3.5 text-xs w-full"
+					className="bg-transparent pl-2.5 py-3.5 text-xs w-full active:border-0 hover:border-0"
 					{...register(id)}
 				>
 					{options.map((option, index) => (
 						<option
 							className="text-background text-xs"
 							key={index}
-							value={option}
+							value={index === 0 ? "" : option}
 						>
 							{option}
 						</option>
 					))}
 				</select>
-				<Text className="text-[#bf4349] text-[10px] tab:text-xs">
-					{errors[id]?.message}
-				</Text>
 			</div>
 		</>
 	);

@@ -115,6 +115,9 @@ export const RegisterForm = ({ register, handleSubmit, errors }) => {
 										labelStyles="mb-[5px] text-[13px] laptop:text-sm laptop:mb-2.5"
 										options={options}
 									/>
+									<Text className="text-[#bf4349] text-[10px] tab:text-xs">
+										{errors[id]?.message}
+									</Text>
 								</div>
 							),
 						)}

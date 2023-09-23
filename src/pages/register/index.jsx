@@ -3,6 +3,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { RegisterForm } from "src/sections";
 import { http } from "src/services";
+import { notification } from "src/services/notificationServices";
 
 const message = "Required";
 const schema = yup
@@ -32,8 +33,13 @@ export const Register = () => {
 	});
 
 	const onSubmit = async (data) => {
-		const response = await http.request("/registration", data);
-		console.log(response);
+		try {
+			const response = await http.request("/registration", data);
+			notification(response.statusText);
+		} catch (error) {
+			const message = Object.keys(error.response.data);
+			notification(`Error! Please check ${message[0]}`);
+		}
 	};
 
 	return (
