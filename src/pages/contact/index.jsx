@@ -29,7 +29,7 @@ export const Contact = () => {
 			<div className="hidden max-w-[272px] mx-auto text-left laptop:block laptop:mt-14">
 				<Heading
 					type="h1"
-					className="font-heading font-bold text-primary text-xl tab:text-2xl laptop:text-[32px] laptop:leading-normal"
+					className="font-heading font-bold text-primary text-xl tab:text-2xl laptop:!text-[32px] laptop:leading-normal"
 				>
 					Get in touch
 				</Heading>
@@ -40,7 +40,7 @@ export const Contact = () => {
 				))}
 				<SocialAccounts
 					containerStyles="flex-col gap-3.5 mt-[35px] text-left"
-					textStyles="laptop:text-base"
+					textStyles="laptop:!text-base"
 					iconStyles="gap-4"
 				/>
 			</div>

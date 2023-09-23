@@ -65,10 +65,10 @@ export const Timeline = () => {
 	];
 
 	return (
-		<section>
+		<section className="pt-20 pb-[74px] laptop:pb-28 laptop:pt-[72px]">
 			<Heading
 				type="h2"
-				className="font-heading font-bold text-xl tab:text-2xl laptop:text-[32px]"
+				className="font-heading font-bold text-xl tab:text-2xl laptop:!text-[32px]"
 			>
 				Timeline
 			</Heading>
@@ -96,7 +96,7 @@ export const Timeline = () => {
 						<div className={`flex flex-col gap-2 w-full ${contentStyles}`}>
 							<Heading
 								type="h2"
-								className={`font-bold text-lg text-primary laptop:text-2xl laptop:max-w-[520px] ${textStyles}`}
+								className={`font-bold text-lg text-primary laptop:!text-2xl laptop:max-w-[520px] ${textStyles}`}
 							>
 								{heading}
 							</Heading>

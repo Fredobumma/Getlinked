@@ -8,11 +8,11 @@ export const Policy = () => {
 	];
 
 	return (
-		<section className="flex flex-col items-center justify-center tab:flex-row tab:gap-[50px]">
+		<section className="border-t border-white/[0.18] flex flex-col items-center justify-center -mx-4 pb-20 pt-[70px] px-4 tab:flex-row tab:gap-[50px] tab:-mx-8 tab:px-8 laptop:-mx-12 laptop:pb-40 laptop:pt-[92px] laptop:px-12">
 			<div className="max-w-[320px] w-full tab:text-left tab:max-w-[420px] tab:w-1/2 laptop:max-w-[540px]">
 				<Heading
 					type="h2"
-					className="font-heading font-bold text-xl tab:text-2xl tab:mb-3.5 laptop:text-[32px] laptop:leading-normal laptop:mb-4"
+					className="font-heading font-bold text-xl tab:text-2xl tab:mb-3.5 laptop:!text-[32px] laptop:leading-normal laptop:mb-4"
 				>
 					Privacy Policy and
 					<p className="text-primary">Terms</p>

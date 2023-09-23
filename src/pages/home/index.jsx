@@ -15,7 +15,19 @@ import {
 export const Home = () => {
 	return (
 		<>
-			<Timeline />
+			<NavBar />
+			<main className="mt-[120px] laptop:mt-44">
+				<Hero />
+				<Introduction />
+				<GuideLines />
+				<Criteria />
+				<Faq />
+				<Timeline />
+				<Rewards />
+				<Sponsors />
+				<Policy />
+				<Footer />
+			</main>
 		</>
 	);
 };

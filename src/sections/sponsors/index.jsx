@@ -33,10 +33,10 @@ export const Sponsors = () => {
 	];
 
 	return (
-		<section>
+		<section className="pb-[104px] pt-10 laptop:pb-32 laptop:pt-28">
 			<Heading
 				type="h2"
-				className="font-heading font-bold text-xl tab:text-2xl laptop:text-[32px] laptop:leading-normal"
+				className="font-heading font-bold text-xl tab:text-2xl laptop:!text-[32px] laptop:leading-normal"
 			>
 				Partners and Sponsors
 			</Heading>

@@ -7,6 +7,7 @@
 
 :root {
 	color-scheme: light dark;
+	--scrollbar-color: #ff26b9;
 
 	font-family: "Montserrat", sans-serif;
 	font-weight: 400;
@@ -22,4 +23,20 @@
 html {
 	overflow-x: hidden;
 	scroll-behavior: smooth;
+}
+
+/* Firefox scrollbar */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: var(--scrollbar-color);
+}
+
+/* Chrome, Edge, and Safari scrollbar */
+*::-webkit-scrollbar {
+	width: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: var(--scrollbar-color);
+	border-radius: 12px;
 }

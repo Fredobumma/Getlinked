@@ -15,6 +15,7 @@ import guideline_2x from "./guideline-2x.png";
 import guideline_1x from "./guideline-1x.png";
 import faq_2x from "./faq-2x.png";
 import faq_1x from "./faq-1x.png";
+import rewards_bg_2x from "./rewards-bg-2x.png";
 import reward_2x from "./reward-2x.png";
 import reward_1x from "./reward-1x.png";
 import gold_medal_2x from "./gold-medal-2x.png";
@@ -69,6 +70,7 @@ export {
 	guideline_1x,
 	faq_2x,
 	faq_1x,
+	rewards_bg_2x,
 	reward_2x,
 	reward_1x,
 	gold_medal_2x,

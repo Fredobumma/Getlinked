@@ -26,7 +26,7 @@ export const Criteria = () => {
 	];
 
 	return (
-		<section className="flex flex-col items-center justify-center tab:flex-row tab:gap-[50px]">
+		<section className="flex flex-col items-center justify-center pt-[74px] pb-[60px] tab:flex-row tab:gap-[50px] laptop:pb-40 laptop:pt-[92px]">
 			<div className="tab:w-1/2">
 				<Picture
 					image2x={criteria_2x}
@@ -37,7 +37,7 @@ export const Criteria = () => {
 			<div className="max-w-[320px] tab:text-left tab:max-w-[420px] tab:w-1/2 laptop:max-w-[540px]">
 				<Heading
 					type="h2"
-					className="font-heading font-bold text-xl mb-4 tab:text-2xl tab:mb-3.5 laptop:text-[32px] laptop:leading-normal laptop:mb-5"
+					className="font-heading font-bold text-xl mb-4 tab:text-2xl tab:mb-3.5 laptop:!text-[32px] laptop:leading-normal laptop:mb-5"
 				>
 					Judging Criteria
 					<p className="text-primary">Key attributes</p>
@@ -53,7 +53,7 @@ export const Criteria = () => {
 						{text}
 					</Text>
 				))}
-				<Button className="inline-block px-10 py-4 tab:mt-5 laptop:mt-[30px]">
+				<Button className="inline-block py-2 px-3.5 tab:mt-5 tab:px-10 tab:py-4 laptop:mt-[30px]">
 					Read More
 				</Button>
 			</div>

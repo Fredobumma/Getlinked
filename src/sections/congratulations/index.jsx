@@ -11,7 +11,7 @@ export const Congratulations = () => {
 				/>
 				<Heading
 					type="h2"
-					className="font-semibold mt-[26px] mb-[30px] text-base tab:text-2xl laptop:leading-normal laptop:mb-[15px] laptop:mt-0 laptop:text-32px"
+					className="font-semibold mt-[26px] mb-[30px] text-base tab:text-2xl laptop:leading-normal laptop:mb-[15px] laptop:mt-0 laptop:!text-32px"
 				>
 					Congratulations <br /> you have successfully Registered!
 				</Heading>

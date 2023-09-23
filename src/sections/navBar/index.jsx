@@ -8,7 +8,7 @@ export const NavBar = () => {
 	const navLinks = ["Timeline", "Overview", "FAQs", "Contact"];
 
 	return (
-		<nav className="bg-background fixed inset-x-0 px-4 top-0 z-50 tab:px-8 laptop:px-12 laptop:pt-10">
+		<nav className="border-b border-white/[0.18] bg-background fixed inset-x-0 px-4 top-0 z-50 tab:px-8 laptop:px-12 laptop:pt-10">
 			<div className="flex items-center justify-between max-w-[294px] mx-auto py-5 tab:max-w-[540px] laptop:max-w-[1256px]">
 				<div className="laptop:mr-[100px]">
 					<Logo />
@@ -21,7 +21,10 @@ export const NavBar = () => {
 				>
 					<ul className="space-y-5 tab:space-y-[30px] laptop:space-y-0 laptop:space-x-14">
 						{navLinks.map((link, index) => (
-							<li className="laptop:inline" key={index}>
+							<li
+								className="focus:text-primary hover:text-primary laptop:inline"
+								key={index}
+							>
 								<a href="/">{link}</a>
 							</li>
 						))}

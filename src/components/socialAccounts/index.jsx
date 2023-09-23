@@ -1,7 +1,12 @@
 import { Text } from "src/components";
 import { facebook, instagram, linkedIn, x_twitter } from "src/assets";
 
-export const SocialAccounts = ({ containerStyles, textStyles, iconStyles }) => {
+export const SocialAccounts = ({
+	containerStyles,
+	text,
+	textStyles,
+	iconStyles,
+}) => {
 	const socialAccounts = [
 		{
 			title: "Instagram logo",
@@ -27,7 +32,9 @@ export const SocialAccounts = ({ containerStyles, textStyles, iconStyles }) => {
 
 	return (
 		<div className={`flex ${containerStyles}`}>
-			<Text className={`text-primary text-xs ${textStyles}`}>Share on</Text>
+			<Text className={`text-primary text-xs ${textStyles}`}>
+				{text || "Share on"}
+			</Text>
 			<nav className={`flex items-center ${iconStyles}`}>
 				{socialAccounts.map(({ title, image, path }, index) => (
 					<a key={index} href={path} target="_blank">

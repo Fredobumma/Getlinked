@@ -1,5 +1,6 @@
-import { Heading, Picture, Text, Figure } from "src/components";
+import { Heading, Picture, Text } from "src/components";
 import {
+	rewards_bg_2x,
 	reward_2x,
 	reward_1x,
 	silver_medal_2x,
@@ -47,8 +48,8 @@ export const Rewards = () => {
 	];
 
 	return (
-		<section className="flex flex-col items-center justify-center tab:flex-row tab:gap-[50px] laptop:gap-10">
-			<div className="hidden tab:block laptop:w-2/5">
+		<section className="flex flex-col items-center justify-center -mx-4 pb-[90px] pt-[72px] px-4 relative tab:flex-row tab:gap-[50px] tab:-mx-8 tab:px-8 laptop:gap-10 laptop:-mx-12 laptop:pb-36 laptop:px-12">
+			<div className="motion-safe:animate-ping-slow hidden tab:block laptop:w-2/5">
 				<Picture
 					image2x={reward_2x}
 					image1x={reward_1x}
@@ -59,7 +60,7 @@ export const Rewards = () => {
 				<div className="mx-auto max-w-[560px] laptop:pb-20">
 					<Heading
 						type="h2"
-						className="font-heading font-bold text-xl mb-1.5 tab:text-2xl tab:mb-3.5 laptop:mb-4 laptop:text-[32px] laptop:leading-normal"
+						className="font-heading font-bold text-xl mb-1.5 tab:text-2xl tab:mb-3.5 laptop:mb-4 laptop:!text-[32px] laptop:leading-normal"
 					>
 						Prizes and
 						<p className="text-primary">Rewards</p>
@@ -69,7 +70,7 @@ export const Rewards = () => {
 						and for participants.
 					</Text>
 				</div>
-				<div className="tab:hidden">
+				<div className="motion-safe:animate-ping-slow tab:hidden">
 					<Picture
 						image2x={reward_2x}
 						image1x={reward_1x}
@@ -85,15 +86,17 @@ export const Rewards = () => {
 							<div className={image.styles}>
 								<Picture image2x={image.source} imageText={image.alt} />
 							</div>
-							<p className={`mt-4 tab:mt-6 laptop:text-4xl ${position.styles}`}>
+							<p
+								className={`mt-4 tab:mt-6 laptop:!text-4xl ${position.styles}`}
+							>
 								{position.title}
 							</p>
-							<p className={`mt-1 mb-1.5 laptop:mb-5 laptop:text-2xl`}>
+							<p className={`mt-1 mb-1.5 laptop:mb-5 laptop:!text-2xl`}>
 								Runner
 							</p>
 							<p
-								className={`text-sm laptop:text-[32px] ${
-									index === 1 ? "text-primary" : "text-secondary"
+								className={`text-sm laptop:!text-[32px] ${
+									index === 1 ? "text-secondary" : "text-primary"
 								}`}
 							>
 								{price}
@@ -102,6 +105,10 @@ export const Rewards = () => {
 					))}
 				</div>
 			</div>
+			<div
+				style={{ backgroundImage: `url(${rewards_bg_2x})` }}
+				className="absolute bg-center h-full inset-0 m-auto w-full -z-10"
+			></div>
 		</section>
 	);
 };

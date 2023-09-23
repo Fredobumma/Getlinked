@@ -65,7 +65,7 @@ export const Register = () => {
 			<div className="max-w-[264px] mx-auto tab:max-w-[500px] laptop:bg-white/[.03] laptop:max-w-[740px] laptop:px-[90px] laptop:py-[65px] laptop:shadow-form">
 				<Heading
 					type="h1"
-					className="hidden font-heading font-bold text-primary laptop:block laptop:leading-normal laptop:text-[32px]"
+					className="hidden font-heading font-bold text-primary laptop:block laptop:leading-normal laptop:!text-[32px]"
 				>
 					Register
 				</Heading>
@@ -94,7 +94,7 @@ export const Register = () => {
 									id={id}
 									name={id}
 									placeholder={placeholder}
-									labelStyles="mb-[5px] text-[13px] laptop:text-sm laptop:mb-2.5"
+									labelStyles="mb-[5px] text-[13px] laptop:!text-sm laptop:mb-2.5"
 									className="mb-[18px] px-[30px] py-3 placeholder:text-[13px] placeholder:opacity-25 laptop:mb-[30px]"
 								/>
 							</div>
@@ -109,7 +109,7 @@ export const Register = () => {
 										id={id}
 										label={label}
 										name={id}
-										labelStyles="mb-[5px] text-[13px] laptop:text-sm laptop:mb-2.5"
+										labelStyles="mb-[5px] text-[13px] laptop:!text-sm laptop:mb-2.5"
 										options={options}
 									/>
 								</div>
@@ -117,7 +117,7 @@ export const Register = () => {
 						)}
 					</div>
 					<div className="text-center mt-[15px] mb-6 laptop:mt-6 laptop:mb-0">
-						<Text className="italic text-left text-abstract text-[9px] tab:text-xs laptop:text-xs">
+						<Text className="italic text-left text-abstract text-[9px] tab:!text-xs laptop:!text-xs">
 							Please review your registration details before submitting
 						</Text>
 						<div className="flex items-start gap-2.5 mt-3 mb-3.5 text-left tab:items-center tab:mb-[18px] laptop:mb-[22px] laptop:mt-4">

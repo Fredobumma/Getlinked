@@ -7,6 +7,10 @@ export default {
 			laptop: "1024px",
 		},
 		extend: {
+			animation: {
+				"ping-slow": "ping 2s cubic-bezier(0, 0, 0.2, 1) infinite",
+				wiggle: "wiggle 2s ease-in-out infinite",
+			},
 			backgroundImage: {
 				button:
 					"linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%)",
@@ -32,6 +36,12 @@ export default {
 			},
 			fontSize: {
 				"32px": "32px",
+			},
+			keyframes: {
+				wiggle: {
+					"0%, 100%": { transform: "rotate(-3deg)" },
+					"50%": { transform: "rotate(3deg)" },
+				},
 			},
 			listStyleImage: {
 				"term-list": 'url("/src/assets/terms-list.svg")',

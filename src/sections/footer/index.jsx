@@ -24,17 +24,17 @@ export const Footer = () => {
 			<div className="max-w-[271px] mx-auto tab:max-w-[400px] laptop:flex laptop:justify-between laptop:max-w-[1072px]">
 				<div className="laptop:flex laptop:flex-col">
 					<Logo />
-					<Text className="!leading-[172.4%] mt-3 mb-10 text-xs tab:text-xs laptop:max-w-[412px] laptop:text-xs">
+					<Text className="!leading-[172.4%] mt-3 mb-10 text-xs tab:text-xs laptop:max-w-[412px] laptop:!text-xs">
 						Getlinked Tech Hackathon is a technology innovation program
 						established by a group of organizations with the aim of showcasing
 						young and talented individuals in the field of technology
 					</Text>
 					<div className="flex items-center gap-2.5 laptop:mt-auto">
-						<Text className="!leading-[172.4%] text-center text-xs tab:text-xs laptop:text-xs">
+						<Text className="!leading-[172.4%] text-center text-xs tab:text-xs laptop:!text-xs">
 							Terms of Use
 						</Text>
 						<span className="bg-primary inline-block h-[17px] w-0.5"></span>
-						<Text className="!leading-[172.4%] text-center text-xs tab:text-xs laptop:text-xs">
+						<Text className="!leading-[172.4%] text-center text-xs tab:text-xs laptop:!text-xs">
 							Privacy Policy
 						</Text>
 					</div>
@@ -55,7 +55,8 @@ export const Footer = () => {
 					</ul>
 					<SocialAccounts
 						containerStyles="gap-4 items-end"
-						textStyles="tab:text-xs laptop:text-xs"
+						text="Follow us"
+						textStyles="tab:text-xs laptop:!text-xs"
 						iconStyles="gap-4"
 					/>
 				</nav>
@@ -78,7 +79,7 @@ export const Footer = () => {
 					</ul>
 				</div>
 			</div>
-			<Text className="mt-[60px] text-center text-xs tab:text-xs laptop:mt-[50px] laptop:text-xs">
+			<Text className="mt-[60px] text-center text-xs tab:text-xs laptop:mt-[50px] laptop:!text-xs">
 				All rights reserved. &copy; getlinked Ltd.
 			</Text>
 		</footer>
