@@ -36,11 +36,11 @@ export const Sponsors = () => {
 		<section className="pb-[104px] pt-10 laptop:pb-32 laptop:pt-28">
 			<Heading
 				type="h2"
-				className="font-heading font-bold text-xl tab:text-2xl laptop:!text-[32px] laptop:leading-normal"
+				className="font-heading font-bold text-xl tab:text-2xl laptop:text-[32px] laptop:leading-normal"
 			>
 				Partners and Sponsors
 			</Heading>
-			<Text className="!leading-[20.5px] max-w-[286px] mx-auto mt-[5px] mb-10 text-xs tab:max-w-[450px] tab:mt-[22px] tab:mb-16 tab:text-sm laptop:!text-base">
+			<Text className="!leading-[20.5px] max-w-[286px] mx-auto mt-[5px] mb-10 text-xs tab:max-w-[450px] tab:mt-[22px] tab:mb-16 tab:text-sm laptop:text-base">
 				Getlinked Hackathon 1.0 is honored to have the following major companies
 				as its partners and sponsors
 			</Text>

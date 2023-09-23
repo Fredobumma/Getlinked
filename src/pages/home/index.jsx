@@ -5,7 +5,6 @@ import {
 	GuideLines,
 	Hero,
 	Introduction,
-	NavBar,
 	Policy,
 	Rewards,
 	Sponsors,
@@ -15,19 +14,16 @@ import {
 export const Home = () => {
 	return (
 		<>
-			<NavBar />
-			<main className="mt-[120px] laptop:mt-44">
-				<Hero />
-				<Introduction />
-				<GuideLines />
-				<Criteria />
-				<Faq />
-				<Timeline />
-				<Rewards />
-				<Sponsors />
-				<Policy />
-				<Footer />
-			</main>
+			<Hero />
+			<Introduction />
+			<GuideLines />
+			<Criteria />
+			<Faq />
+			<Timeline />
+			<Rewards />
+			<Sponsors />
+			<Policy />
+			<Footer />
 		</>
 	);
 };

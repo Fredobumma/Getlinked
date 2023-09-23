@@ -1,4 +1,4 @@
-import { Text } from "src/components";
+import { AnchorLink, Text } from "src/components";
 import { facebook, instagram, linkedIn, x_twitter } from "src/assets";
 
 export const SocialAccounts = ({
@@ -37,9 +37,9 @@ export const SocialAccounts = ({
 			</Text>
 			<nav className={`flex items-center ${iconStyles}`}>
 				{socialAccounts.map(({ title, image, path }, index) => (
-					<a key={index} href={path} target="_blank">
+					<AnchorLink key={index} path={path} target="_blank">
 						<img src={image} alt={title} />
-					</a>
+					</AnchorLink>
 				))}
 			</nav>
 		</div>

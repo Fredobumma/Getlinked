@@ -11,11 +11,11 @@ export const Congratulations = () => {
 				/>
 				<Heading
 					type="h2"
-					className="font-semibold mt-[26px] mb-[30px] text-base tab:text-2xl laptop:leading-normal laptop:mb-[15px] laptop:mt-0 laptop:!text-32px"
+					className="font-semibold mt-[26px] mb-[30px] text-base tab:text-2xl laptop:leading-normal laptop:mb-[15px] laptop:mt-0 laptop:text-32px"
 				>
 					Congratulations <br /> you have successfully Registered!
 				</Heading>
-				<Text className="font-medium text-center text-xs tab:text-sm laptop:font-semibold laptop:!text-sm">
+				<Text className="font-medium text-center text-xs tab:text-sm laptop:font-semibold laptop:text-sm">
 					Yes, it was easy and you did it! <br /> check your mail box for next
 					step
 					<span className="ml-[1px] text-sm tab:ml-1 tab:text-xl">

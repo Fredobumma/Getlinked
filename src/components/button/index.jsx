@@ -1,7 +1,9 @@
-export const Button = ({ className, children }) => {
+import { AnchorLink } from "src/components";
+
+export const Button = ({ className, children, path }) => {
 	return (
-		<a href="/" className={`bg-button rounded ${className}`}>
+		<AnchorLink path={path} styles={`bg-button rounded ${className}`}>
 			{children}
-		</a>
+		</AnchorLink>
 	);
 };

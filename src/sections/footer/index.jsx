@@ -1,5 +1,13 @@
-import { Figure, Heading, Logo, Text, SocialAccounts } from "src/components";
+import {
+	AnchorLink,
+	Figure,
+	Heading,
+	Logo,
+	Text,
+	SocialAccounts,
+} from "src/components";
 import { location, phone } from "src/assets";
+import { scrollToView } from "src/utilities";
 
 export const Footer = () => {
 	const navLinks = ["Overview", "Timeline", "FAQs", "Register"];
@@ -24,18 +32,22 @@ export const Footer = () => {
 			<div className="max-w-[271px] mx-auto tab:max-w-[400px] laptop:flex laptop:justify-between laptop:max-w-[1072px]">
 				<div className="laptop:flex laptop:flex-col">
 					<Logo />
-					<Text className="!leading-[172.4%] mt-3 mb-10 text-xs tab:text-xs laptop:max-w-[412px] laptop:!text-xs">
+					<Text className="!leading-[172.4%] mt-3 mb-10 text-xs tab:text-xs laptop:max-w-[412px]">
 						Getlinked Tech Hackathon is a technology innovation program
 						established by a group of organizations with the aim of showcasing
 						young and talented individuals in the field of technology
 					</Text>
-					<div className="flex items-center gap-2.5 laptop:mt-auto">
-						<Text className="!leading-[172.4%] text-center text-xs tab:text-xs laptop:!text-xs">
-							Terms of Use
+					<div className="animate-bounce flex items-center gap-2.5 laptop:mt-auto">
+						<Text className="!leading-[172.4%] text-center text-xs tab:text-xs laptop:text-xs">
+							<AnchorLink onClick={(e) => scrollToView(e, "#policy")}>
+								Terms of Use{" "}
+							</AnchorLink>
 						</Text>
 						<span className="bg-primary inline-block h-[17px] w-0.5"></span>
-						<Text className="!leading-[172.4%] text-center text-xs tab:text-xs laptop:!text-xs">
-							Privacy Policy
+						<Text className="!leading-[172.4%] text-center text-xs tab:text-xs laptop:text-xs">
+							<AnchorLink onClick={(e) => scrollToView(e, "#policy")}>
+								Privacy Policy
+							</AnchorLink>
 						</Text>
 					</div>
 				</div>
@@ -49,14 +61,19 @@ export const Footer = () => {
 					<ul className="mb-3 mt-1.5 space-y-3.5 laptop:space-y-3">
 						{navLinks.map((link, index) => (
 							<li key={index} className="leading-[172.4%]">
-								<a href="/">{link}</a>
+								<AnchorLink
+									path={`/${link.toLowerCase()}`}
+									onClick={(e) => scrollToView(e, link)}
+								>
+									{link}
+								</AnchorLink>
 							</li>
 						))}
 					</ul>
 					<SocialAccounts
 						containerStyles="gap-4 items-end"
 						text="Follow us"
-						textStyles="tab:text-xs laptop:!text-xs"
+						textStyles="tab:text-xs laptop:text-xs"
 						iconStyles="gap-4"
 					/>
 				</nav>
@@ -71,15 +88,19 @@ export const Footer = () => {
 						{contacts.map(({ content, image, path }, index) => (
 							<li key={index} className="flex items-start gap-4">
 								<Figure image={image} />
-								<a href={path} className="-mt-1 laptop:max-w-[120px]">
+								<AnchorLink
+									path={path}
+									target="_blank"
+									styles="-mt-1 laptop:max-w-[120px]"
+								>
 									{content}
-								</a>
+								</AnchorLink>
 							</li>
 						))}
 					</ul>
 				</div>
 			</div>
-			<Text className="mt-[60px] text-center text-xs tab:text-xs laptop:mt-[50px] laptop:!text-xs">
+			<Text className="mt-[60px] text-center text-xs tab:text-xs laptop:mt-[50px] laptop:text-xs">
 				All rights reserved. &copy; getlinked Ltd.
 			</Text>
 		</footer>

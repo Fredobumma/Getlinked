@@ -25,22 +25,22 @@ export const Contact = () => {
 	];
 
 	return (
-		<section className="laptop:flex laptop:justify-center">
+		<section className="pb-10 laptop:flex laptop:justify-center laptop:py-20">
 			<div className="hidden max-w-[272px] mx-auto text-left laptop:block laptop:mt-14">
 				<Heading
 					type="h1"
-					className="font-heading font-bold text-primary text-xl tab:text-2xl laptop:!text-[32px] laptop:leading-normal"
+					className="font-heading font-bold text-primary text-xl tab:text-2xl laptop:text-[32px] laptop:leading-normal"
 				>
 					Get in touch
 				</Heading>
 				{contactTextbox.map(({ content, styles }, index) => (
-					<Text key={index} className={`laptop:!text-base ${styles || ""}`}>
+					<Text key={index} className={`laptop:text-base ${styles || ""}`}>
 						{content}
 					</Text>
 				))}
 				<SocialAccounts
 					containerStyles="flex-col gap-3.5 mt-[35px] text-left"
-					textStyles="laptop:!text-base"
+					textStyles="laptop:text-base"
 					iconStyles="gap-4"
 				/>
 			</div>

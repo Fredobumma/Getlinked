@@ -14,7 +14,7 @@ export const GuideLines = () => {
 			<div className="max-w-[320px] mt-2.5 tab:mt-0 tab:text-left tab:max-w-[420px] tab:w-1/2 laptop:max-w-[540px]">
 				<Heading
 					type="h2"
-					className="font-heading font-bold text-xl mb-2.5 tab:text-2xl tab:mb-3.5 laptop:mb-4 laptop:!text-[32px] laptop:leading-normal"
+					className="font-heading font-bold text-xl mb-2.5 tab:text-2xl tab:mb-3.5 laptop:mb-4 laptop:text-[32px] laptop:leading-normal"
 				>
 					Rules and
 					<p className="text-primary">Guidelines</p>

@@ -37,7 +37,7 @@ export const Criteria = () => {
 			<div className="max-w-[320px] tab:text-left tab:max-w-[420px] tab:w-1/2 laptop:max-w-[540px]">
 				<Heading
 					type="h2"
-					className="font-heading font-bold text-xl mb-4 tab:text-2xl tab:mb-3.5 laptop:!text-[32px] laptop:leading-normal laptop:mb-5"
+					className="font-heading font-bold text-xl mb-4 tab:text-2xl tab:mb-3.5 laptop:text-[32px] laptop:leading-normal laptop:mb-5"
 				>
 					Judging Criteria
 					<p className="text-primary">Key attributes</p>

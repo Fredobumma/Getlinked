@@ -60,12 +60,12 @@ export const Rewards = () => {
 				<div className="mx-auto max-w-[560px] laptop:pb-20">
 					<Heading
 						type="h2"
-						className="font-heading font-bold text-xl mb-1.5 tab:text-2xl tab:mb-3.5 laptop:mb-4 laptop:!text-[32px] laptop:leading-normal"
+						className="font-heading font-bold text-xl mb-1.5 tab:text-2xl tab:mb-3.5 laptop:mb-4 laptop:text-[32px] laptop:leading-normal"
 					>
 						Prizes and
 						<p className="text-primary">Rewards</p>
 					</Heading>
-					<Text className="!leading-[170.9%] mb-10 text-xs tab:mb-0 tab:text-sm laptop:!text-base">
+					<Text className="!leading-[170.9%] mb-10 text-xs tab:mb-0 tab:text-sm laptop:text-base">
 						Prizes and Rewards Highlight of the prizes or rewards for winners
 						and for participants.
 					</Text>
@@ -86,16 +86,14 @@ export const Rewards = () => {
 							<div className={image.styles}>
 								<Picture image2x={image.source} imageText={image.alt} />
 							</div>
-							<p
-								className={`mt-4 tab:mt-6 laptop:!text-4xl ${position.styles}`}
-							>
+							<p className={`mt-4 tab:mt-6 laptop:text-4xl ${position.styles}`}>
 								{position.title}
 							</p>
-							<p className={`mt-1 mb-1.5 laptop:mb-5 laptop:!text-2xl`}>
+							<p className={`mt-1 mb-1.5 laptop:mb-5 laptop:text-2xl`}>
 								Runner
 							</p>
 							<p
-								className={`text-sm laptop:!text-[32px] ${
+								className={`text-sm laptop:text-[32px] ${
 									index === 1 ? "text-secondary" : "text-primary"
 								}`}
 							>

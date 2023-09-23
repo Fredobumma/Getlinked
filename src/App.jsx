@@ -1,11 +1,38 @@
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import { Root } from "./pages";
 import "./App.css";
-import { Contact, Home, Register } from "./pages";
-import { Congratulations } from "./sections";
 
 function App() {
+	const router = createBrowserRouter([
+		{
+			element: <Root />,
+			children: [
+				{
+					path: "/",
+					lazy: async () => ({
+						Component: (await import("./pages")).Home,
+					}),
+				},
+				{
+					path: "contact",
+					lazy: async () => ({
+						Component: (await import("./pages")).Contact,
+					}),
+				},
+				{
+					path: "register",
+					lazy: async () => ({
+						Component: (await import("./pages")).Register,
+					}),
+				},
+			],
+		},
+	]);
+
 	return (
 		<>
-			<Home />
+			<RouterProvider router={router} />
 		</>
 	);
 }

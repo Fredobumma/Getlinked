@@ -8,6 +8,7 @@ export default {
 		},
 		extend: {
 			animation: {
+				"bounce-slow": "bounce 2s infinite",
 				"ping-slow": "ping 2s cubic-bezier(0, 0, 0.2, 1) infinite",
 				wiggle: "wiggle 2s ease-in-out infinite",
 			},

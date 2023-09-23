@@ -7,7 +7,7 @@
 
 :root {
 	color-scheme: light dark;
-	--scrollbar-color: #ff26b9;
+	--scrollbar-color: rgba(212, 52, 254, 0.5);
 
 	font-family: "Montserrat", sans-serif;
 	font-weight: 400;
@@ -28,7 +28,7 @@ html {
 /* Firefox scrollbar */
 * {
 	scrollbar-width: thin;
-	scrollbar-color: var(--scrollbar-color);
+	scrollbar-color: var(--scrollbar-color) rgba(0, 0, 0, 0);
 }
 
 /* Chrome, Edge, and Safari scrollbar */

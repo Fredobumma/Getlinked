@@ -65,14 +65,17 @@ export const Timeline = () => {
 	];
 
 	return (
-		<section className="pt-20 pb-[74px] laptop:pb-28 laptop:pt-[72px]">
+		<section
+			id="timeline"
+			className="pt-20 pb-[74px] laptop:pb-28 laptop:pt-[72px]"
+		>
 			<Heading
 				type="h2"
-				className="font-heading font-bold text-xl tab:text-2xl laptop:!text-[32px]"
+				className="font-heading font-bold text-xl tab:text-2xl laptop:text-[32px]"
 			>
 				Timeline
 			</Heading>
-			<Text className="!leading-[172.4%] max-w-[292px] mb-14 mt-5 mx-auto text-sm tab:max-w-[340px] tab:text-sm laptop:mb-[90px] laptop:mt-3 laptop:!text-sm">
+			<Text className="!leading-[172.4%] max-w-[292px] mb-14 mt-5 mx-auto text-sm tab:max-w-[340px] tab:text-sm laptop:mb-[90px] laptop:mt-3 laptop:text-sm">
 				Here is the breakdown of the time we anticipate using for the upcoming
 				event.
 			</Text>
@@ -96,12 +99,12 @@ export const Timeline = () => {
 						<div className={`flex flex-col gap-2 w-full ${contentStyles}`}>
 							<Heading
 								type="h2"
-								className={`font-bold text-lg text-primary laptop:!text-2xl laptop:max-w-[520px] ${textStyles}`}
+								className={`font-bold text-lg text-primary laptop:text-2xl laptop:max-w-[520px] ${textStyles}`}
 							>
 								{heading}
 							</Heading>
 							<Text
-								className={`tab:text-sm laptop:!text-sm laptop:max-w-[450px] ${textStyles}`}
+								className={`tab:text-sm laptop:text-sm laptop:max-w-[450px] ${textStyles}`}
 							>
 								{content}
 							</Text>
@@ -117,7 +120,7 @@ export const Timeline = () => {
 							</span>
 						</div>
 						<Text
-							className={`flex font-bold text-primary tab:text-lg w-full laptop:!text-2xl ${textStyles} ${dateStyles}`}
+							className={`flex font-bold text-primary tab:text-lg w-full laptop:text-2xl ${textStyles} ${dateStyles}`}
 						>
 							{date}
 						</Text>
