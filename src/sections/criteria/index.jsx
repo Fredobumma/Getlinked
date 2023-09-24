@@ -60,7 +60,10 @@ export const Criteria = () => {
 						{text}
 					</Text>
 				))}
-				<Button className="inline-block py-2 px-3.5 tab:mt-5 tab:px-10 tab:py-4 laptop:mt-[30px]">
+				<Button
+					path="/contact"
+					className="inline-block py-2 px-3.5 tab:mt-5 tab:px-10 tab:py-4 laptop:mt-[30px]"
+				>
 					Read More
 				</Button>
 			</div>

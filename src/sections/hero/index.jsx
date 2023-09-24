@@ -57,7 +57,10 @@ export const Hero = () => {
 						Participate in getlinked tech Hackathon 2023 stand a chance to win a
 						Big prize
 					</Text>
-					<Button className="inline-block px-[46px] py-3.5 laptop:px-[52px] laptop:py-4">
+					<Button
+						path="/register"
+						className="inline-block px-[46px] py-3.5 laptop:px-[52px] laptop:py-4"
+					>
 						Register
 					</Button>
 					<Text className="font-countDown leading-[133%] max-w-fit mb-3 mt-3.5 mx-auto !text-5xl tab:leading-[133%] tab:mb-16 tab:mt-10 tab:mx-0 tab:!text-[64px] laptop:leading-[133%] laptop:text-[64px] laptop:mb-24 laptop:mt-20">

@@ -70,7 +70,10 @@ export const Policy = () => {
 							))}
 						</ul>
 						<div className="text-center">
-							<Button className="inline-block py-2 px-3.5 tab:px-10 tab:py-4">
+							<Button
+								path="/contact"
+								className="inline-block py-2 px-3.5 tab:px-10 tab:py-4"
+							>
 								Read More
 							</Button>
 						</div>
